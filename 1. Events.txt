@@ -1,0 +1,75 @@
+# 1. Events
+-----------
+
+* </> Code Challenge: Add button text on click
+----------------------------------------------
+
+* Add text to the button when clicked
+-------------------------------------
+
+You're given the following HTML
+
+<div class="button-container" id="button-result">
+	<button id="btn"></button>
+</div>
+
+
+* Your task
+-----------
+. Add a click event to the button
+. On click, the button text should say: I've been clicked
+. Remember, we are simulating the user clicking the button and we have already taken care of that aspect of the code for you in the Test Code section.
+
+
+* My Solution
+-------------
+// JavaScript code​​​​​​‌‌​​​‌‌​​‌‌​‌​​​‌‌​​​‌‌​‌ below
+// Write your answer here, and then test your code.
+// Your job is to implement the function buttonTextOnClick() method.
+
+// Change these boolean values to control whether you see 
+// the expected answer and/or hints.
+const showExpectedResult = false
+const showHints = false
+
+function buttonTextOnClick(document) {
+    // Your code goes here.
+    const button = document.getElementById('btn');
+
+    button.addEventListener('click', function() {
+        const myInsertText = "I've been clicked";
+        button.innerHTML = myInsertText;
+    })
+}
+
+
+* Linkedin Solution
+-------------------
+
+* Goal
+------
+Add a click event to the button in the HTML provided.
+
+* Click Event
+-------------
+. Only need to add click event to the button
+
+. A mouse event, common for JavaScript developers
+
+function buttonTextOnClick(document) {
+    // Your code goes here.
+    const buttonToClick = document.getElementById('btn');
+
+    buttonToClick.addEventListener('click', () => {
+	buttonToClick.innerHTML = "I've been clicked";
+    });
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
