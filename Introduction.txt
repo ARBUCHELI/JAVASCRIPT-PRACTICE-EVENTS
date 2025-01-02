@@ -1,0 +1,14 @@
+# INTRODUCTION
+--------------
+
+* Testing your skills with JavaScript
+-------------------------------------
+Much of the code we write as JavaScript developers centers on the events triggered by users.
+
+
+* Getting started with CoderPad
+-------------------------------
+In this course, CoderPad will be integrated in the table of content.
+
+
+
