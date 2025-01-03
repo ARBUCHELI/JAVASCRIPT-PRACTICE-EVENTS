@@ -68,6 +68,111 @@ function buttonTextOnClick(document) {
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* </> Code Challenge: Add list of colors on key down
+----------------------------------------------------
+
+* Add a list of colors on key down
+----------------------------------
+You're given the following HTML:
+
+<div class="container-result" id="container">
+	<ul id="color-list">
+	</ul>
+</div>
+
+* Your task:
+------------
+. An array of colors is provided for you:
+	const colors = ['red', 'blue', 'purple']
+
+. Add the colors as <li> to the <ul> on key down of Enter
+
+. The key down event will apply to the entire document
+
+. Remember, we are simulating the user pressing Enter and we have already taken care of that aspect of the code for you in the Test Code section/
+
+* My Solution ---> Wrong Solution
+-------------
+// JavaScript code​​​​​​‌‌​​​‌‌​​‌‌​‌​​‌​‌‌​‌‌‌‌‌ below
+// Write your answer here, and then test your code.
+// Your job is to implement the displayColorList() method.
+
+// Change these boolean values to control whether you see 
+// the expected answer and/or hints.
+const showExpectedResult = false;
+const showHints = false;
+
+const colors = ['red', 'blue', 'purple'];
+function displayColorList(document) {
+    // Your code goes here.
+    const listToModify = document.getElementById('color-list')
+    document.addEventListener('keydown', (event) => {
+        if (event.keyCode === 13) {
+            arrayList = (colors) => {
+                let items = color.forEach(item => {
+                  let li = document.createElement('li');
+                  li.textContent = item;
+                  listToModify.appendChild(li)
+                });
+              }
+        }
+    })
+}
+
+* LinkedIn Solution
+-------------------
+
+* Goal
+------
+Add a list of colors to the page on keydown of the Enter key.
+
+* Keydown Event
+---------------
+. Fired when a key is pressed
+
+. Listening for Enter (key code 13)
+
+const colors = ['red', 'blue', 'purple'];
+function displayColorList(document) {
+    // Your code goes here.
+    document.addEventListener('keydown', () => {
+    	const container = document.getElementById('color-list');
+	
+	colors.forEach((color) => {
+		const li = document.createElement('li');
+		li.textContent = color;
+
+		container.appendChild(li);
+	}
+    })
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
