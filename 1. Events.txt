@@ -89,7 +89,7 @@ You're given the following HTML:
 
 . The key down event will apply to the entire document
 
-. Remember, we are simulating the user pressing Enter and we have already taken care of that aspect of the code for you in the Test Code section/
+. Remember, we are simulating the user pressing Enter and we have already taken care of that aspect of the code for you in the Test Code section
 
 * My Solution ---> Wrong Solution
 -------------
@@ -149,6 +149,49 @@ function displayColorList(document) {
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* </> Code Challenge: Remove list of colors on key up
+-----------------------------------------------------
+
+* Remove the list items on key up
+---------------------------------
+You're given the following HTML:
+
+<div class="container-result" id="container">
+	<ul id="color-list">
+		<li>red</li>
+		<li>blue</li>
+		<li>purple</li>
+	</ul>
+</div>
+
+* Your task:
+------------
+. Remove the color list (id="color-list") on key up of Spacebar
+
+. The key up event will apply to the entire document
+
+. Remember, we are simulating the user pressing Spacebar and we have already taken care of that aspect of the code for you in the Test Code section
+
+* LinkedIn Solution
+-------------------
+
+* Goal
+------
+Remove the list of colors on keyup of the spacebar.
+
+function removeColorList(document) {
+	// Your code goes here
+	document.addEventListener("keyup", () => {
+		const container = document.getElementById("container");
+		const list = document.getElementById("color-list");
+		container.removeChild(list);
+	})
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
